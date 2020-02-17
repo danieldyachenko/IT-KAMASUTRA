@@ -1,0 +1,13 @@
+.header {
+    background-color: cornflowerblue;
+    height: 5%;
+    min-height: 1cm;
+}
+
+.loginBlock {
+    float: right;
+}
+
+.loginBlock > a {
+    color: white;
+}

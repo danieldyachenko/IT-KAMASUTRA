@@ -1,0 +1,21 @@
+.nav {
+    width: 30%;
+    background-color: cyan;
+    display: table-cell;
+    vertical-align: top;
+}
+
+ul {
+    list-style: none;
+    margin: 2%;
+    padding: 0%;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+a:link, a:hover {
+    text-decoration: none;
+    color: currentColor;
+}

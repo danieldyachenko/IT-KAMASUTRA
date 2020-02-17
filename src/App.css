@@ -1,0 +1,17 @@
+body, html, .App, #root {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.main {
+    display: table;
+    height: 95%;
+    width: 100%;
+}
+
+.mainRight{
+    width: 70%;
+    /* height: 100%; */    
+    display: table-cell;
+}

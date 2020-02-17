@@ -1,0 +1,13 @@
+.Users {
+    background-color: burlywood;
+    height: 100%;
+}
+
+.userPhoto {
+    width: 3cm;
+    height: 3cm;
+}
+
+.selectedPage {
+    font-weight: bold;
+}
