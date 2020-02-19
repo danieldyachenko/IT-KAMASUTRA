@@ -12,10 +12,19 @@ export const usersAPI = {
             .then(response => response.data)
     },
     follow(usersId) {
-        return instance.post(`https://social-network.samuraijs.com/api/1.0/follow/${usersId}`, { })
+        return instance.post(`follow/${usersId}`, {});
     },
     unfollow(usersId) {
-        return instance.delete(`https://social-network.samuraijs.com/api/1.0/follow/${usersId}`)
+        return instance.delete(`follow/${usersId}`);
+    },
+    getProfile(userId) {
+        return instance.get(`profile/${userId}`);
+    }
+}
+
+export const authAPI = {
+    me() {
+        return instance.get(`auth/me`);
     }
 }
 
