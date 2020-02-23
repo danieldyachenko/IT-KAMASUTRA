@@ -3,11 +3,11 @@ import React from 'react';
 export class ProfileStatus extends React.Component {
     state = {
         editMode: false
-    }
+    };
 
     activateEditMode = () => {
-        this.setState( {editMode: !this.state.editMode} )
-    }
+        this.setState( {editMode: !this.state.editMode} );
+    };
 
     render() {
         return (
