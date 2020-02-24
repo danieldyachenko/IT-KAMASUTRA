@@ -67,4 +67,4 @@ export const updateStatus = (status) => (dispatch) => {
             dispatch(setStatus(status));
         }
     });
-}
+};
