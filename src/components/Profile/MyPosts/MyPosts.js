@@ -25,7 +25,7 @@ const MyPosts = (props) => {
     return (
         <>
             <h3>MyPosts</h3>
-            <AddNewPostFormRedux onSubmit={onAddPost}/>
+            <AddNewPostFormRedux onSubmit={onAddPost} />
             {postsElements}
         </>
     );
