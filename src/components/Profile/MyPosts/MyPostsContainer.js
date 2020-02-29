@@ -7,7 +7,7 @@ let mapStateToProps = (state) => {
         posts: state.profilePage.posts,
         newPostText: state.profilePage.newPostText
     }
-}
+};
 
 let mapDispatchToProps = (dispatch) => {
     return {
@@ -15,7 +15,7 @@ let mapDispatchToProps = (dispatch) => {
             dispatch(addPostActionCreator(newPostText));
         }
     }
-}
+};
 
 const MyPostsContainer = connect(mapStateToProps, mapDispatchToProps)(MyPosts);
 
