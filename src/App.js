@@ -6,7 +6,7 @@ import UsersContainer from './components/Users/UsersContainer.js';
 import ProfileContainer from './components/Profile/ProfileContainer.js';
 import HeaderContainer from './components/Header/HeaderContainer.js';
 import './App.css';
-import { Login } from './components/Login/Login.jsx';
+import Login from './components/Login/Login.jsx';
 
 const App = (props) => {
     return (

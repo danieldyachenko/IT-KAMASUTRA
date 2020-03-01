@@ -8,7 +8,7 @@ let mapStateToProps = (state) => {
     return {
         messagesPage: state.messagesPage,
     }
-}
+};
 
 let mapDispatchToProps = (dispatch) => {
     return {
@@ -16,7 +16,7 @@ let mapDispatchToProps = (dispatch) => {
             dispatch(sendMessageCreator(newMessageBody));
         }
     }
-}
+};
 
 export default compose(
     connect(mapStateToProps, mapDispatchToProps),
