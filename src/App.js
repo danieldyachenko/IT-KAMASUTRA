@@ -24,10 +24,10 @@ class App extends React.Component {
                 <div className='main'>
                     <Navbar/>
                     <div className='mainRight'>
-                        <Route path="/messages" render={() => <DialogsContainer/>}/>
-                        <Route path="/profile/:userId?" render={() => <ProfileContainer/>}/>
-                        <Route path="/users" render={() => <UsersContainer/>}/>
-                        <Route path="/login" render={() => <Login/>}/>
+                        <Route path="/messages" render={() => <DialogsContainer />} />
+                        <Route path="/profile/:userId?" render={() => <ProfileContainer />} />
+                        <Route path="/users" render={() => <UsersContainer />} />
+                        <Route path="/login" render={() => <Login />}/>
                     </div>
                 </div>
             </div>
