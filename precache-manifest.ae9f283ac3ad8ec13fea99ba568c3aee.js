@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c1739afb5e289eeab5569ee676cc482a",
+    "revision": "98a4f102eb558e9afe0bf5f2094e72fc",
     "url": "/IT-KAMASUTRA/index.html"
   },
   {
-    "revision": "116035a646f7339612a1",
+    "revision": "0ca37458f88f875f3a99",
     "url": "/IT-KAMASUTRA/static/css/3.19ba7e4e.chunk.css"
   },
   {
-    "revision": "2aff98b7682a23aac29d",
+    "revision": "ad2ae951b748c276ec9c",
     "url": "/IT-KAMASUTRA/static/css/main.1ed089c2.chunk.css"
   },
   {
-    "revision": "edf196ae699ca1249eed",
-    "url": "/IT-KAMASUTRA/static/js/2.2192b2bc.chunk.js"
+    "revision": "18b1ddde783516e27cb9",
+    "url": "/IT-KAMASUTRA/static/js/2.c6823f46.chunk.js"
   },
   {
-    "revision": "116035a646f7339612a1",
-    "url": "/IT-KAMASUTRA/static/js/3.622acbd2.chunk.js"
+    "revision": "0ca37458f88f875f3a99",
+    "url": "/IT-KAMASUTRA/static/js/3.d444cb06.chunk.js"
   },
   {
-    "revision": "2aff98b7682a23aac29d",
-    "url": "/IT-KAMASUTRA/static/js/main.b091b8fc.chunk.js"
+    "revision": "ad2ae951b748c276ec9c",
+    "url": "/IT-KAMASUTRA/static/js/main.39094e77.chunk.js"
   },
   {
-    "revision": "44e9d5bf5cbe30d331e2",
-    "url": "/IT-KAMASUTRA/static/js/runtime-main.36cc4e88.js"
+    "revision": "e81385e39bbe5d9a39ad",
+    "url": "/IT-KAMASUTRA/static/js/runtime-main.657b9e00.js"
   },
   {
     "revision": "6dc0808de061bce5ecd01ef5b3debcc3",
