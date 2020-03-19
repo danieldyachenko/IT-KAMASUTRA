@@ -6,7 +6,6 @@ import s from './ProfileInfo.module.css'
 import {ProfileDataReduxForm} from "./ProfileStatus/ProfileDataForm";
 
 const ProfileInfo = (props) => {
-
     const [editMode, setEditMode] = useState(false);
 
     if (!props.profile) {
@@ -20,7 +19,9 @@ const ProfileInfo = (props) => {
     };
 
     const onSubmit = formData => {
-        props.saveProfile(formData);
+        props.saveProfile(formData).then(() => {
+            setEditMode(false);
+        });
     };
 
     return (
@@ -28,7 +29,7 @@ const ProfileInfo = (props) => {
             <img src={props.profile.photos.large || userPhoto} className={s.mainPhoto}/>
             {props.isOwner && <input type={'file'} onChange={onMainPhotoSelected}/>}
             {editMode
-                ? <ProfileDataReduxForm profile={props.profile} onSubmit={onSubmit}/>
+                ? <ProfileDataReduxForm profile={props.profile} onSubmit={onSubmit} initialValues={props.profile} />
                 : <ProfileData
                     profile={props.profile}
                     isOwner={props.isOwner}
@@ -52,7 +53,7 @@ const ProfileData = ({profile, isOwner, goToEditMode}) =>
         {
             profile.lookingForAJob &&
             <div>
-                <b>My professionals skills</b>: {profile.lookingForAJobDecription}
+                <b>My professionals skills</b>: {profile.lookingForAJobDescription}
             </div>
         }
         <div>
