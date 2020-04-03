@@ -1,5 +1,5 @@
 import React from 'react';
-import {Route, withRouter} from "react-router-dom"
+import {Redirect, Route, withRouter} from "react-router-dom"
 import Navbar from './components/Navbar/Navbar.js';
 import UsersContainer from './components/Users/UsersContainer.js';
 import ProfileContainer from './components/Profile/ProfileContainer.js';
@@ -16,23 +16,33 @@ import {withSuspense} from "./hoc/withSuspense";
 const DialogsContainer = React.lazy(() => import('./components/Dialogs/DialogsContainer.js'));
 
 class App extends React.Component {
+    /*catchAllUnhandledErrors = promiseRejectionEvent => {
+        alert('Some error occured');
+
+    };*/
     componentDidMount() {
         this.props.initializeApp();
+        // window.addEventListener('unHandledRejection', this.catchAllUnhandledErrors)
     }
+    /*componentWillUnmount() {
+        window.removeEventListener('unHandledRejection', this.catchAllUnhandledErrors)
+    }*/
+
     render() {
         if (!this.props.initialized) return <Preloader/>;
         return (
             <div className='App'>
                 <HeaderContainer/>
-                <div className='main'>
+                <main>
                     <Navbar/>
-                    <div className='mainRight'>
+                    <article>
+                        {/*<Route path="/" render={() => <Redirect to={'/profile'}/>} />*/}
                         <Route path="/messages" render={withSuspense(DialogsContainer)} />
                         <Route path="/profile/:userId?" render={() => <ProfileContainer />} />
                         <Route path="/users" render={() => <UsersContainer />} />
-                        <Route path="/login" render={() => <Login />}/>
-                    </div>
-                </div>
+                        <Route exact path="/login" render={() => <Login />}/> {/*Строгий маршрут*/}
+                    </article>
+                </main>
             </div>
         )
     }

@@ -4,14 +4,13 @@ body, html, .App, #root {
     width: 100%;
 }
 
-.main {
+main {
     display: table;
     height: 95%;
     width: 100%;
 }
 
-.mainRight{
+article {
     width: 70%;
-    /* height: 100%; */    
     display: table-cell;
 }
